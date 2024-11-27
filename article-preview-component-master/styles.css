@@ -1,0 +1,336 @@
+body {
+    background-color: hsl(210, 46%, 95%);
+    /*color:  hsl(212, 23%, 69%);
+    color:  hsl(214, 17%, 51%);*/
+    color:  hsl(217, 19%, 35%);
+    font-family: 'Manrope', sans-serif;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.preview-card {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+}
+
+.preview-img {
+    height: 370px;
+    border-top-left-radius: 10px;
+    border-bottom-left-radius: 10px;  
+}
+
+.text-section {
+    min-width: 600px;
+    max-width: 600px;
+    height: 370px;
+    margin-left: -85px;
+    margin-bottom: 4px;
+    border-top-right-radius: 10px;
+    border-bottom-right-radius: 10px;
+    background-color: white;
+    position: relative;
+}
+
+h1 {
+    font-size: 29px;
+    max-width: 490px;
+    margin-top: 35px;
+    margin-left: 50px;
+    margin-bottom: 10px;
+}
+
+p {
+    font-size: 18px;
+    max-width: 490px;
+    margin-left: 51px;
+    color: hsl(214, 17%, 51%);
+}
+
+.author-share {
+    display: flex;
+    flex-direction: row;
+}
+
+.avatar {
+    border-radius: 50%;
+    height: 55px;
+    margin-left: 53px;
+    margin-top: 10px;
+}
+
+h2 {
+    font-size: 17px;
+    margin-bottom: -15px;
+    margin-left: 28px;
+    margin-top: 15px;
+}
+
+.author p {
+    font-size: 17px;
+    margin-left: 28px;
+    color: hsl(212, 23%, 69%);
+}
+
+.active-share {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-left: 221px;
+    margin-top: 20px;
+    color: white;
+    background-color: hsl(214, 17%, 51%);
+    border-radius: 50%;
+    width: 35px;
+    height: 35px;
+}
+
+/*.active-share svg, .inactive-share svg  {
+    height: 18px;
+    width: 18px;
+    margin-bottom: 3px;
+    margin-left: 1px;
+}*/
+
+.inactive-share {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-left: 221px;
+    margin-top: 20px;
+    color: hsl(214, 20%, 46%);
+    background-color: hsl(210, 29%, 91%);
+    border-radius: 50%;
+    width: 35px;
+    height: 35px;  
+}
+    
+.share {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-left: 200px;
+    margin-top: 35px;
+    padding: 10px;
+    width: 315px;
+    height: 50px;
+    background-color: hsl(217, 19%, 35%);
+    border-radius: 10px;
+    position: absolute;
+    bottom: 130px;
+    left: 155px;
+}
+
+.share p {
+    font-size: 16px;
+    text-transform: uppercase;
+    letter-spacing: .4em;
+    color: hsl(212, 23%, 59%);
+    margin-left: 35px;
+    padding: 0px;
+}
+
+.share img {
+    width: 27px;
+    height: 25px;
+}
+
+.triangle {
+    width: 0;
+    height: 0;
+    position: absolute;
+    top: 68px;
+    transform: translateX(-50%);
+    left: 50%;
+    border-right: 18px solid transparent;
+    border-left: 18px solid transparent;
+    border-top: 18px solid hsl(217, 19%, 35%);
+    border-bottom: 18x solid transparent;
+}
+
+.hidden {
+    display: none;
+}
+
+.ss-author-share, .ss-share {
+    display: none;
+}
+
+.attribution {
+    position: fixed;
+    bottom: 20px;
+    left: 50%;
+    transform: translateX(-50%)  
+}
+
+a {
+    text-decoration: none;
+}
+
+
+
+@media (max-width: 700px) {
+    
+.preview-card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.preview-img {
+    height: auto;
+    width: 400px;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;  
+    border-bottom-left-radius: 0px;
+}
+
+.text-section {
+    box-sizing: border-box;
+    min-width: 400px;
+    max-width: 400px;
+    height: auto;
+    margin-left:0;
+    margin-top: -57px;
+    padding:33px 33px 20px 33px;
+    border-top-right-radius: 0px;  
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+}
+
+.ss-author-share {
+    display: flex;
+    flex-direction: row;
+}
+
+h1 {
+    font-size: 21px;
+    max-width:max-content;
+    margin-top: 5px;
+    margin-left: 0px;
+    margin-bottom: 10px;
+}
+
+p {
+    font-size: 17px;
+    max-width: 490px;
+    line-height: 1.5;
+    margin-left: 0px;
+}
+
+.ss-avatar {
+    border-radius: 50%;
+    height: 55px;
+    margin-left: 0px;
+    margin-top: 25px;
+}
+
+h2 {
+    font-size: 16px;
+    margin-bottom: -15px;
+    margin-left: 20px;
+    margin-top: 30px;
+}
+
+.ss-author p {
+    font-size: 16px;
+    margin-left: 20px;
+}
+
+.ss-inactive-share {
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    color: hsl(212, 19%, 53%);
+    background-color: hsl(210, 46%, 95%); 
+    border-radius: 50%;
+    width: 40px;
+    height: 40px; 
+    margin-left: 79px;
+    margin-top: 35px;
+}
+
+.ss-share {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    gap: 24px;
+    margin-left: 2px;
+    padding-left: 15px;
+    padding: 10px;
+    width: 380px;
+    height: 60px;
+    background-color: hsl(217, 19%, 35%);
+    border-radius: 10px;
+    border-top-right-radius: 0px;
+    border-top-left-radius: 0px;
+    position: absolute;
+    bottom: -63px;
+    left: -2px;
+}
+
+.ss-active-share {
+    display: flex;
+    position: absolute;
+    right: 27px;
+    bottom: -40px;
+    z-index: 1;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    background-color: hsl(214, 17%, 51%);
+    border-radius: 50%;
+    width: 35px;
+    height: 35px;
+   /* margin-left: 221px;
+    margin-top: 20px;*/
+}
+
+/*.active-share svg, .inactive-share svg  {
+    height: 18px;
+    width: 18px;
+    margin-bottom: 3px;
+    margin-left: 1px;
+}*/
+
+.ss-share p {
+    font-size: 16px;
+    text-transform: uppercase;
+    letter-spacing: .4em;
+    color: hsl(211, 16%, 62%);
+    margin-left: 35px;
+    padding: 0px;
+}
+
+.ss-share img {
+    width: 27px;
+    height: 25px;
+}
+
+.ss-share p {
+    margin-left: 25px;
+    font-size: 14px;
+}
+
+.hidden {
+    display: none;
+}
+
+.author-share, .share, .triangle {
+    display: none;
+}
+
+.attribution {
+    position: fixed;
+    bottom: 15px;
+    left: 50%;
+    transform: translateX(-50%)  
+}
+
+  
+
+}
